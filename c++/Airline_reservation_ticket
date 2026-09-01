@@ -1,0 +1,110 @@
+//Airline reservation ticket
+#include <iostream>
+using namespace std;
+#include <string>
+int main()
+{
+	int f1=5 , f2=7 , f3=3 , age , op , amount;
+	string name;
+	cout<<"Enter 1 for flight from Canada to India , amount = 5000"<<endl;
+	cout<<"Enter 2 for flight from India to Australia , amount = 6000"<<endl;
+	cout<<"Enter 3 for flight from India to Germeny , amount = 9000"<<endl;
+	do
+	{
+		int ch;
+		cout<<"Enter your choice"<<endl;
+		cin>>ch;
+		switch(ch)
+		{
+			case 1:cout<<"Welcome to book flight from Canada to India"<<endl;
+			       cout<<"Enter your Name"<<endl;
+		           cin>>name;
+		           cout<<"Enter your age"<<endl;
+		           cin>>age;
+		           cout<<"Enter your amount"<<endl;
+		           cin>>amount;
+		           if(amount < 5000)
+		           {
+		           	cout<<"Sorry your amount is very to book this flight"<<endl;
+		           	return 0;
+				   }
+		           if(f1!=0)
+		           {
+		           	cout<<"Your ticket is successfully booked"<<endl;
+		           	f1--;
+				   }
+				   else
+				   {
+				   	cout<<"Sorry no seat available"<<endl;
+				   }
+				   break;
+			case 2:cout<<"Welcome to book flight from India to Australia"<<endl;
+			       cout<<"Enter your Name"<<endl;
+		           cin>>name;
+		           cout<<"Enter your age"<<endl;
+		           cin>>age;
+		           cout<<"Enter your amount"<<endl;
+		           cin>>amount;
+		           if(amount < 6000)
+		           {
+		           	cout<<"Sorry your amount is very to book this flight"<<endl;
+		           	return 0;
+				   }
+		           if(f2!=0)
+		           {
+		           	cout<<"Your ticket is successfully booked"<<endl;
+		           	f2--;
+				   }
+				   else
+				   {
+				   	cout<<"Sorry no seat available"<<endl;
+				   }
+				   break;
+			case 3:cout<<"Welcome to book flight from India to Germeny"<<endl;
+			       cout<<"Enter your Name"<<endl;
+		           cin>>name;
+		           cout<<"Enter your age"<<endl;
+		           cin>>age;
+		           cout<<"Enter your amount"<<endl;
+		           cin>>amount;
+		           if(amount < 9000)
+		           {
+		           	cout<<"Sorry your amount is very to book this flight"<<endl;
+		           	return 0;
+				   }
+		           if(f3!=0)
+		           {
+		           	cout<<"Your ticket is successfully booked"<<endl;
+		           	f3--;
+				   }
+				   else
+				   {
+				   	cout<<"Sorry no seat available"<<endl;
+				   }
+				   break;
+			default:cout<<"This flight is not available in the list"<<endl;
+			        return 0;		     
+		}
+			cout<<"add more passenger press 1 if not press 0"<<endl;
+			cin>>op;  
+	}while(op == 1);
+	return 0;	
+}
+
+//Output
+/*Enter 1 for flight from Canada to India , amount = 5000
+Enter 2 for flight from India to Australia , amount = 6000
+Enter 3 for flight from India to Germeny , amount = 9000
+Enter your choice
+1
+Welcome to book flight from Canada to India
+Enter your Name
+Ansh
+Enter your age
+12
+Enter your amount
+6789
+Your ticket is successfully booked
+add more passenger press 1 if not press 0
+0
+  */
