@@ -1,0 +1,77 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a[9];
+	int x , flag=0;
+	cout<<"Enter the array elements"<<endl;
+	for(int i=0;i<9;i++)
+	{
+		cin>>a[i];
+	}
+	cout<<"Print the array"<<endl;
+	for(int i=0;i<9;i++)
+	{
+		cout<<a[i]<<" ";
+	}
+	cout<<endl;
+	cout<<"Enter the element to search"<<endl;
+	cin>>x;
+	//linear search
+	for(int i=0;i<9;i++)
+	{
+		if(a[i] == x)
+		{
+			flag=1;
+			cout<<"Element is found at = "<<i+1<<endl;
+			break;
+		}
+	}
+	if(flag == 0)
+	{
+		cout<<"Element not found sorry"<<endl;
+	}
+	cout<<endl;
+	//bubble sort
+	int temp;
+	for(int i=0;i<9-1;i++)
+	{
+		for(int j=0;j<9-i-1;j++)
+		{
+			if(a[j] > a[j+1])
+			{
+				temp=a[j];
+				a[j]=a[j+1];
+				a[j+1]=temp;
+			}
+		}
+	}
+	cout<<"Print the sorted array"<<endl;
+	for(int i=0;i<9;i++)
+	{
+		cout<<a[i]<<" ";
+	}
+	return 0;
+	
+}
+-----------------------------------------------------------------------------------
+Output:
+-----------------------------------------------------------------------------------
+Enter the array elements
+98
+76
+36
+90
+99
+12
+67
+88
+94
+Print the array
+98 76 36 90 99 12 67 88 94
+Enter the element to search
+12
+Element is found at = 6
+
+Print the sorted array
+12 36 67 76 88 90 94 98 99
