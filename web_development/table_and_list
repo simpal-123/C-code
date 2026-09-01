@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and list</title>
+</head>
+<body>
+    <ul type="square">
+        <li>Ansh Kushwaha</li>
+        <li>Aman Mishra</li>
+        <ul>
+            <li>belongs to Chagarpur</li>
+        </ul>
+        <li>Anuj Saini</li>
+    </ul>
+    <ol type="1">
+        <li>2401920100074</li>
+        <li>2401920100059</li>
+        <li>2401920100081</li>
+    </ol>
+    <a href="/demo2.html" target="_blank">demo2</a>
+    <h3>Html table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll number</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ansh Kushwaha</td>
+                <td>24</td>
+                <td>Maths</td>
+            </tr>
+            <tr>
+                <td>Aman Mishra</td>
+                <td>38</td>
+                <td>science</td>
+            </tr>
+            <tr>
+                <td>Anuj Saini</td>
+                <td>78</td>
+                <td>english</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
